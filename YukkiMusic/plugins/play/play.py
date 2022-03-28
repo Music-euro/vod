@@ -9,6 +9,7 @@
 
 import random
 import string
+from strings.filters import command
 from ast import ExceptHandler
 
 from pyrogram import filters
@@ -40,7 +41,7 @@ PLAY_COMMAND = get_command("PLAY_COMMAND")
 
 
 @app.on_message(
-    filters.command(PLAY_COMMAND)
+    command(PLAY_COMMAND)
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
