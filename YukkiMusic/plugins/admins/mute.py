@@ -8,6 +8,7 @@
 # All rights reserved.
 
 from pyrogram import filters
+from strings.filters import command
 from pyrogram.types import Message
 
 from config import BANNED_USERS
@@ -22,7 +23,7 @@ MUTE_COMMAND = get_command("MUTE_COMMAND")
 
 
 @app.on_message(
-    filters.command(MUTE_COMMAND)
+    command(MUTE_COMMAND)
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
