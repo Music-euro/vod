@@ -8,6 +8,7 @@
 # All rights reserved.
 
 from pyrogram import filters
+from strings.filters import command
 from pyrogram.types import Message
 
 from config import BANNED_USERS
@@ -22,7 +23,7 @@ PAUSE_COMMAND = get_command("PAUSE_COMMAND")
 
 
 @app.on_message(
-    filters.command(PAUSE_COMMAND)
+    command(PAUSE_COMMAND)
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
