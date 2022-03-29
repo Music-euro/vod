@@ -27,6 +27,9 @@ def track_markup(_, videoid, user_id, channel, fplay):
                 text=_["CLOSE_BUTTON"],
                 callback_data=f"forceclose {videoid}|{user_id}",
             )
+            InlineKeyboardButton(
+                        text=_["P_B_5"], url=f"https://t.me/so_alfaa"
+            ),
         ],
     ]
     return buttons
