@@ -134,8 +134,8 @@ def slider_markup(
             ),
         ],
     ]
-            if OWNER:
-            buttons.append(
+def track_markup(_, videoid, user_id, channel, fplay):
+    buttons = [
                 [
                     InlineKeyboardButton(
                         text=_["S_B_13"], url=f"https://t.me/so_alfaa"
