@@ -38,7 +38,7 @@ def start_pannel(_):
                 ),
                 InlineKeyboardButton(
 
-                    text=_["S_B_8"], url=f"https://t.me/so_alfaa"
+                    text=_["S_B_9"], url=f"https://t.me/so_alfaa"
 
                 ),
             ]
