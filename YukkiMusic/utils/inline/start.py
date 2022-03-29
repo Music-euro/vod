@@ -125,7 +125,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                     ),
                 ]
             )
-        if OWR:
+        if OWNER:
             buttons.append(
                 [
                     InlineKeyboardButton(
