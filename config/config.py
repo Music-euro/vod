@@ -174,7 +174,7 @@ PING_IMG_URL = getenv(
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "assets/Playlist.jpeg",
+    "assets/lura.mp4",
 )
 
 GLOBAL_IMG_URL = getenv(
