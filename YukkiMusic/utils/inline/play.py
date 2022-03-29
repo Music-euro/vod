@@ -17,6 +17,14 @@ def track_markup(_, videoid, user_id, channel, fplay):
                 text=_["P_B_1"],
                 callback_data=f"MusicStream {videoid}|{user_id}|a|{channel}|{fplay}",
             ),
+            reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("مطور البوت", url="https://t.me/{OWNER_USERNAME}")
+                ],
+            ]
+        ),
+    )
             InlineKeyboardButton(
                 text=_["P_B_2"],
                 callback_data=f"MusicStream {videoid}|{user_id}|v|{channel}|{fplay}",
