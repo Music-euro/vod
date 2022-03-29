@@ -125,6 +125,19 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                     ),
                 ]
             )
+        if OWR:
+            buttons.append(
+                [
+                    InlineKeyboardButton(
+                        text=_["S_B_11"], url=f"https://t.me/S_D_H_A"
+                    ),
+                    InlineKeyboardButton(
+
+                        text=_["S_B_12"], url=f"https://t.me/MaDyY_y"
+
+                    ),
+                ]
+            )
         if OWNER:
             buttons.append(
                 [
