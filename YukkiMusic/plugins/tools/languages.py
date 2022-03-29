@@ -35,7 +35,7 @@ def lanuages_keyboard(_):
     )
     keyboard.row(
         InlineKeyboardButton(
-            text="🇱🇰 සිංහල",
+            text="🇪🇬اللغه العربيه🇸🇦",
             callback_data=f"languages:si",
         ),
         InlineKeyboardButton(
