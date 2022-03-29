@@ -36,6 +36,11 @@ def start_pannel(_):
                 InlineKeyboardButton(
                     text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
                 ),
+                InlineKeyboardButton(
+
+                    text=_["S_B_5"], url=f"https://t.me/so_alfaa"
+
+                ),
             ]
         )
     else:
