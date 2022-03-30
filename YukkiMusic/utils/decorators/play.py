@@ -11,6 +11,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import PLAYLIST_IMG_URL, PRIVATE_BOT_MODE, adminlist
 from strings import get_string
+from staring.filters import command
 from YukkiMusic import YouTube, app
 from YukkiMusic.misc import SUDOERS
 from YukkiMusic.utils.database import (get_cmode, get_lang,
@@ -87,7 +88,7 @@ def PlayWrapper(command):
             return await message.reply_text(
                 _["general_4"], reply_markup=upl
             )
-        if message.command[0][0] == "c":
+        if message.command[0][0] == "c" or if message.command[0][0] == "ق":
             chat_id = await get_cmode(message.chat.id)
             if chat_id is None:
                 return await message.reply_text(_["setting_12"])
