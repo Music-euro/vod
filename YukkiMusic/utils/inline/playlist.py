@@ -28,12 +28,19 @@ def botplaylist_markup(_):
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"], callback_data="close"
             ),
+        ], 
+    ]
+    return buttons
+
+
+def botplaylist_markup(_):
+    buttons = [
+        [
             InlineKeyboardButton(
                 text=_["PL_B_12"], url=f"https://t.me/so_alfaa"
             ),
         ], 
     ]
-    return buttons
 
 
 def top_play_markup(_):
