@@ -53,7 +53,7 @@ def AdminRightsCheck(mystic):
             return await message.reply_text(
                 _["general_4"], reply_markup=upl
             )
-        if message.command[0][0] == "c,ق":
+        if message.command[0][0] == "c" or message.command[0][0] == "ق":
             chat_id = await get_cmode(message.chat.id)
             if chat_id is None:
                 return await message.reply_text(_["setting_12"])
