@@ -28,7 +28,10 @@ def botplaylist_markup(_):
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"], callback_data="close"
             ),
-        ],
+            InlineKeyboardButton(
+                text=_["PL_B_12"], url=f"https://t.me/so_alfaa"
+            ),
+        ], 
     ]
     return buttons
 
@@ -57,6 +60,9 @@ def top_play_markup(_):
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"], callback_data="close"
             ),
+            InlineKeyboardButton(
+                text=_["PL_B_12"], url=f"https://t.me/so_alfaa"
+            ),
         ],
     ]
     return buttons
@@ -70,6 +76,9 @@ def get_playlist_markup(_):
             ),
             InlineKeyboardButton(
                 text=_["P_B_2"], callback_data="play_playlist b"
+            ),
+            InlineKeyboardButton(
+                text=_["PL_B_12"], url=f"https://t.me/so_alfaa"
             ),
         ],
         [
@@ -107,6 +116,9 @@ def top_play_markup(_):
             ),
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"], callback_data="close"
+            ),
+            InlineKeyboardButton(
+                text=_["PL_B_12"], url=f"https://t.me/so_alfaa"
             ),
         ],
     ]
@@ -159,6 +171,9 @@ def close_markup(_):
                 InlineKeyboardButton(
                     text=_["CLOSE_BUTTON"],
                     callback_data="close",
+                ),
+                InlineKeyboardButton(
+                    text=_["PL_B_12"], url=f"https://t.me/so_alfaa"
                 ),
             ]
         ]
