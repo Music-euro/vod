@@ -41,6 +41,7 @@ def botplaylist_markup(_):
             ),
         ], 
     ]
+    return buttons
 
 
 def top_play_markup(_):
