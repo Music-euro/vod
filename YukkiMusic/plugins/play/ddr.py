@@ -35,16 +35,19 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
 
 
 @app.on_message(
-    command(["start"])
+    filters.command(get_command("START_COMMAND"))
     & filters.group
     & ~filters.edited
+    & ~BANNED_USERS
 )
 @LanguageStart
 async def khalid(client: Client, message: Message):
     out = start_pannel(_)
     await message.reply_photo(
         photo=f"https://telegra.ph//file/ad292b6f6fbc05c824919.jpg",
-        caption=f"""اهلا""",
+        caption=_["start_1"].format(
+            message.chat.title, config.MUSIC_BOT_NAME
+        ),
         reply_markup=InlineKeyboardMarkup(
             [
                 [
