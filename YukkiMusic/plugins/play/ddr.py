@@ -56,7 +56,7 @@ async def hilo(client, message: Message, _):
                         "الاوامر", url=f"https://t.me/{app.username}?start=help")
                 ],[
                     InlineKeyboardButton(
-                        text=_["PL_B_12"], url=f"https://t.me/so_alfaa"),
+                        text=_["PL_B_12"], callback_data=f"eslam"),
             ],
             ]
         ),
