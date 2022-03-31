@@ -56,7 +56,7 @@ async def hilo(client, message: Message, _):
                         "الاوامر", url=f"https://t.me/{app.username}?start=help")
                 ],[
                     InlineKeyboardButton(
-                        text=_["PL_B_12"], callback_data=f"eslam"),
+                        "مطورين السورس", callback_data=f"eslam"),
             ],
             ]
         ),
@@ -66,7 +66,7 @@ async def hilo(client, message: Message, _):
 @app.on_callback_query(filters.regex("eslam"))
 async def eslam(_, query: CallbackQuery):
    await query.edit_message_text(
-       f"""jkgkyjhuu""",
+       f"""للتواصل مع مبرمجين السورس اضغط علي احد الازرار""",
        reply_markup=InlineKeyboardMarkup(
           [
                [
@@ -77,7 +77,9 @@ async def eslam(_, query: CallbackQuery):
                 ],[
                     InlineKeyboardButton(
                         "قناه السورس", url=f"https://t.me/so_alfaa"),
-            ],
+                ],[
+                    InlineKeyboardButton(
+                        "رجوع", callback_data=f"start"),
             ]
         ),
     )
