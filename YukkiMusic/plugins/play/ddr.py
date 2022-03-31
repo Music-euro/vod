@@ -71,12 +71,12 @@ async def eslam(_, query: CallbackQuery):
           [
                [
                     InlineKeyboardButton(
-                        "الاعدادات", callback_data="settings_helper"),
+                        "مبرمج ماديسون", url=f"https://t.me/MaDyY_y"),
                     InlineKeyboardButton(
-                        "الاوامر", url=f"https://t.me/{app.username}?start=help")
+                        "مبرمج اسلام", url=f"https://t.me/S_D_H_A")
                 ],[
                     InlineKeyboardButton(
-                        text=_["PL_B_12"], url=f"https://t.me/so_alfaa"),
+                        "قناه السورس", url=f"https://t.me/so_alfaa"),
             ],
             ]
         ),
