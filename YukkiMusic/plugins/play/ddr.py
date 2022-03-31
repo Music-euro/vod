@@ -35,10 +35,9 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
 
 
 @app.on_message(
-    filters.command(get_command("START_COMMAND"))
+    command(["start"])
     & filters.group
     & ~filters.edited
-    & ~BANNED_USERS
 )
 @LanguageStart
 async def khalid(client: Client, message: Message):
