@@ -80,6 +80,7 @@ async def eslam(_, query: CallbackQuery):
                 ],[
                     InlineKeyboardButton(
                         "رجوع", callback_data=f"start"),
-            ]
+                ],
+          ]
         ),
     )
