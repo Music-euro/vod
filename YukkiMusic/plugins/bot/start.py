@@ -230,7 +230,7 @@ async def start_comm(client, message: Message, _):
 @LanguageStart
 async def testbot(client, message: Message, _):
     out = start_pannel(_)
-        if config.START_IMG_URL:
+                    photo=config.START_IMG_URL,
             try:
                 await message.reply_photo(
                     photo=config.START_IMG_URL,
