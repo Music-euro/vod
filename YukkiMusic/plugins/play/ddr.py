@@ -44,7 +44,7 @@ async def khalid(client: Client, message: Message):
     out = start_pannel(_)
     await message.reply_photo(
         photo=f"https://telegra.ph//file/ad292b6f6fbc05c824919.jpg",
-        caption=f"""_["start_1"].format(message.chat.title, config.MUSIC_BOT_NAME""",
+        caption=f"""اهلا .format(message.chat.title, config.MUSIC_BOT_NAME""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
