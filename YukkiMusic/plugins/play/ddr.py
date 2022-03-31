@@ -39,10 +39,12 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
     & filters.group
     & ~filters.edited
 )
+@LanguageStart
 async def khalid(client: Client, message: Message):
+    out = start_pannel(_)
     await message.reply_photo(
         photo=f"https://telegra.ph//file/ad292b6f6fbc05c824919.jpg",
-        caption=f"""شكرًا لاستضافتي في {0}. \ n {1} ما زال حيًا.  \n\ n للحصول على أي مساعدة أو مساعدة ، تحقق من مجموعة الدعم والقناة.""",
+        caption=f"""_["start_1"].format(message.chat.title, config.MUSIC_BOT_NAME""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
