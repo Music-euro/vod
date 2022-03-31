@@ -57,4 +57,5 @@ async def hilo(client, message: Message, _):
                         "الاعدادات", callback_data="settings_helper")
                 ],
             ]
+        ),
     )
