@@ -8,7 +8,12 @@ from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 from youtubesearchpython.__future__ import VideosSearch
+from typing import Union
 
+from pyrogram.types import InlineKeyboardButton
+
+from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
+from YukkiMusic import app
 import config
 from config import BANNED_USERS
 from config.config import OWNER_ID
