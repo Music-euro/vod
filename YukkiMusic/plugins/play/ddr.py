@@ -79,7 +79,7 @@ async def eslam(_, query: CallbackQuery):
                         "قناه السورس", url=f"https://t.me/so_alfaa"),
                 ],[
                     InlineKeyboardButton(
-                "اغلاق", callback_data="close"
+                        "اغلاق", callback_data="close"
                 ],
           ]
         ),
