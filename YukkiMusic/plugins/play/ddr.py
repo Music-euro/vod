@@ -51,7 +51,7 @@ async def hilo(client, message: Message, _):
             [
                 [
                     InlineKeyboardButton(
-                        "iiiiii", callback_data="settings_helper"),
+                        "الاعدادات", callback_data="settings_helper"),
                 ]
             ]
         ),
