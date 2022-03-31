@@ -42,7 +42,7 @@ async def khalid(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                text=_["S_B_2"], callback_data="settings_helper"
+                        text=_["S_B_2"], callback_data="settings_helper"
                 ]
             ]
         ),
