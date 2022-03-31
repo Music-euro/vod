@@ -40,7 +40,7 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
     & ~filters.edited
 )
 @LanguageStart
-async def khalid(client: Client, message: Message):
+async def hilo(client, message: Message, _):
     out = start_pannel(_)
     await message.reply_photo(
         photo=f"https://telegra.ph//file/ad292b6f6fbc05c824919.jpg",
