@@ -21,6 +21,15 @@ def track_markup(_, videoid, user_id, channel, fplay):
                 text=_["P_B_2"],
                 callback_data=f"MusicStream {videoid}|{user_id}|v|{channel}|{fplay}",
             ),
+        
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["PL_B_12"], url=f"https://t.me/so_alfaa"
+            ),
+            InlineKeyboardButton(
+                text=_["PL_B_13"], url=f"https://t.me/S_D_H_A"
+            ),
         ],
         [
             InlineKeyboardButton(
@@ -41,14 +50,6 @@ def stream_markup(_, videoid):
             ),
             InlineKeyboardButton(
                 text=_["PL_B_3"], switch_inline_query_current_chat=""
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_12"], url=f"https://t.me/so_alfaa"
-            ),
-            InlineKeyboardButton(
-                text=_["PL_B_13"], url=f"https://t.me/S_D_H_A"
             ),
         ],
         [
