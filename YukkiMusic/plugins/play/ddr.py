@@ -42,8 +42,8 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
 @LanguageStart
 async def hilo(client, message: Message, _):
     out = start_pannel(_)
-    await message.reply_photo(
-        photo=f"https://telegra.ph//file/ad292b6f6fbc05c824919.jpg",
+    await message.reply_video(
+        video=f"https://telegra.ph/file/46725d06d4a277c32fe64.mp4",
         caption=_["start_1"].format(
             message.chat.title, config.MUSIC_BOT_NAME
         ),
