@@ -13,13 +13,13 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 )
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph//file/e0bbcfb36e9c9f196e828.jpg",
-        caption=f""" تيست""",
+        photo=f"https://telegra.ph//file/ad292b6f6fbc05c824919.jpg",
+        caption=f"""مبرمج سورس لورا""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "ديف", url=f"https://t.me/H_9_P")
+                        "𝘿𝙀𝙑 ¦ 𝙀𝙎𝙇𝘼𝙈", url=f"https://t.me/H_9_P")
                 ]
             ]
         ),
