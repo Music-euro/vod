@@ -52,9 +52,8 @@ async def hilo(client, message: Message, _):
                 [
                     InlineKeyboardButton(
                         "الاعدادات", callback_data="settings_helper"),
-                ],[
                     InlineKeyboardButton(
-                        "الاعدادات", callback_data="settings_helper")
+                        "الاوامر", url=f"https://t.me/{app.username}?start=help")
                 ],
             ]
         ),
