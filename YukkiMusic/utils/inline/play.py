@@ -57,7 +57,7 @@ def stream_markup(_, videoid):
                 text=_["PL_B_12"], url=f"https://t.me/so_alfaa"
             ),
             InlineKeyboardButton(
-                ["PL_B_12"], callback_data=f"eslam"),
+                "- 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐋𝐮𝐫𝐚 .", callback_data=f"eslam"),
         ],
         [
             InlineKeyboardButton(
