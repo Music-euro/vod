@@ -24,6 +24,7 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
 from pyrogram import Client, filters
 from strings import get_command
 from config.config import OWNER_ID
+from config.config import OWNER
 from strings.filters import command
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
