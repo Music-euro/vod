@@ -36,17 +36,14 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
 @app.on_callback_query(filters.regex("fft"))
 async def fft(_, query: CallbackQuery):
    await query.edit_message_text(
-       f"""للتواصل مع مبرمجين السورس اضغط علي احد الازرار""",
+       f"""[ٓ❍ | 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐋𝐮𝐫𝐚 .](https://t.me/so_alfaa)\n\n[❍ | 𝐋𝐮𝐫𝐚 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐒𝐨𝐮𝐫𝐜𝐞 𝐎𝐧 𝐓𝐞𝐥𝐞 .](https://t.me/so_alfaa)\n\n[❍ | 𝐅𝐨𝐥𝐥𝐨𝐰 𝐓𝐡𝐞 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐁𝐞𝐥𝐨𝐰 .](https://t.me/so_alfaa)""",
        reply_markup=InlineKeyboardMarkup(
           [
                [
                     InlineKeyboardButton(
-                        "مبرمج ماديسون", url=f"https://t.me/MaDyY_y"),
+                        "- 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐋𝐮𝐫𝐚 .", url=f"https://t.me/LURA205"),
                     InlineKeyboardButton(
-                        "مبرمج اسلام", url=f"https://t.me/S_D_H_A")
-                ],[
-                    InlineKeyboardButton(
-                        "قناه السورس", url=f"https://t.me/so_alfaa"),
+                        "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", url=f"https://t.me/so_alfaa")
                 ],[
                     InlineKeyboardButton(
                         "اغلاق", callback_data="close"),
