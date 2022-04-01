@@ -48,7 +48,8 @@ async def fft(_, query: CallbackQuery):
                     InlineKeyboardButton(
                         "اغلاق", callback_data="close"),
                     InlineKeyboardButton(
-                        "رجوع", callback_data=f"fft"),                ],
+                        "رجوع", callback_data=f"fft"),                
+               ],
           ]
         ),
     )
