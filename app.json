@@ -23,6 +23,11 @@
         "value": "",
         "required": true
       },
+      "OWNER": {
+        "description": "ضع هنا يوزر المطور",
+        "value": "FB_BI",
+        "required": true
+      },
       "AUTO_LEAVING_ASSISTANT": {
         "description": "If you want your assistant to leave all chats automatically after some time.",
         "value": "True",
