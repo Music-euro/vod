@@ -27,7 +27,6 @@ async def khalid(client: Client, message: Message):
                     InlineKeyboardButton(
                 InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER
                     ),
-                ],[
                     InlineKeyboardButton(
                         "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", callback_data=f"fft"),
                 ],
