@@ -25,7 +25,7 @@ async def khalid(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "مطور البوت", url=f"user_id=OWNER"
+                InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER
                     ),
                 ],[
                     InlineKeyboardButton(
