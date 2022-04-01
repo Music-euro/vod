@@ -46,7 +46,9 @@ async def ft(_, query: CallbackQuery):
                         "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", url=f"https://t.me/so_alfaa")
                 ],[
                     InlineKeyboardButton(
-                        "اغلاق", callback_data="close"),            
+                        "اغلاق", callback_data="close"),
+                    InlineKeyboardButton(
+                        "رجوع", callback_data=f"ft"),
                ],
           ]
         ),
