@@ -12,8 +12,6 @@ from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
 from YukkiMusic import app
 
 
-def start_pannel(_):
-
 @app.on_message(
     command(["المطور"])
     & filters.group
