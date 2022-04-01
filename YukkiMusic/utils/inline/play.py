@@ -28,7 +28,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
                 text=_["PL_B_12"], url=f"https://t.me/so_alfaa"
             ),
             InlineKeyboardButton(
-                text=_["PL_B_13"], url=f"https://t.me/S_D_H_A"
+                text=_["PL_B_13"], url=f"https://t.me/LURA205"
             ),
         ],
         [
@@ -57,7 +57,8 @@ def stream_markup(_, videoid):
                 text=_["PL_B_12"], url=f"https://t.me/so_alfaa"
             ),
             InlineKeyboardButton(
-                text=_["PL_B_13"], url=f"https://t.me/S_D_H_A"
+                text=_["PL_B_13"], url=f"https://t.me/LURA205"
+            ),
         ],
         [
             InlineKeyboardButton(
