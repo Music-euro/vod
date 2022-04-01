@@ -48,7 +48,7 @@ async def khalid(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "S_B_7", user_id=OWNER)
+                        "S_B_7", url=f"https://t.me/{OWNER}")
                 ],[
                     InlineKeyboardButton(
                         "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", callback_data=f"fft"),
