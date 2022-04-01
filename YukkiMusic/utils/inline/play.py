@@ -58,7 +58,7 @@ def stream_markup(_, videoid):
                 text=_["PL_B_12"], url=f"https://t.me/so_alfaa"
             ),
             InlineKeyboardButton(
-                "مطورين السورس", callback_data=f"sou"),
+                "مطورين السورس", callback_data=f"eslam"),
         ],
         [
             InlineKeyboardButton(
@@ -155,8 +155,8 @@ def slider_markup(
 
 
 
-@app.on_callback_query(filters.regex("sou"))
-async def sou(_, query: CallbackQuery):
+@app.on_callback_query(filters.regex("eslam"))
+async def eslam(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""للتواصل مع مبرمجين السورس اضغط علي احد الازرار""",
        reply_markup=InlineKeyboardMarkup(
