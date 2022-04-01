@@ -31,10 +31,11 @@ from typing import Union
 
 from pyrogram.types import InlineKeyboardButton
 
-from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP, OWNER
+from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
 from YukkiMusic import app
 
 
+OWNER = ("FB_BI")
 @app.on_message(
     command(["المطور"])
     & filters.group
