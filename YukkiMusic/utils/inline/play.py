@@ -8,7 +8,6 @@
 # All rights reserved.
 
 from pyrogram.types import InlineKeyboardButton
-
 from pyrogram.types import (InlineKeyboardButton,CallbackQuery,
                             InlineKeyboardMarkup, Message)
 def track_markup(_, videoid, user_id, channel, fplay):
@@ -58,7 +57,7 @@ def stream_markup(_, videoid):
                 text=_["PL_B_12"], url=f"https://t.me/so_alfaa"
             ),
             InlineKeyboardButton(
-                "مطورين السورس", callback_data=f"eslam"),
+                ["PL_B_12"], callback_data=f"eslam"),
         ],
         [
             InlineKeyboardButton(
