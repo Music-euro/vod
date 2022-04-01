@@ -59,7 +59,6 @@ def stream_markup(_, videoid):
             ),
             InlineKeyboardButton(
                 "مطورين السورس", callback_data=f"sou"),
-            ),
         ],
         [
             InlineKeyboardButton(
