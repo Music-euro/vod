@@ -9,7 +9,8 @@
 
 from pyrogram.types import InlineKeyboardButton
 
-
+from pyrogram.types import (InlineKeyboardButton,CallbackQuery,
+                            InlineKeyboardMarkup, Message)
 def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
         [
@@ -57,7 +58,7 @@ def stream_markup(_, videoid):
                 text=_["PL_B_12"], url=f"https://t.me/so_alfaa"
             ),
             InlineKeyboardButton(
-                text=_["PL_B_13"], url=f"https://t.me/S_D_H_A"
+                "مطورين السورس", callback_data=f"eslam"),
             ),
         ],
         [
@@ -152,3 +153,27 @@ def slider_markup(
         ],
     ]
     return buttons
+
+
+
+@app.on_callback_query(filters.regex("sou"))
+async def sou(_, query: CallbackQuery):
+   await query.edit_message_text(
+       f"""للتواصل مع مبرمجين السورس اضغط علي احد الازرار""",
+       reply_markup=InlineKeyboardMarkup(
+          [
+               [
+                    InlineKeyboardButton(
+                        "مبرمج ماديسون", url=f"https://t.me/MaDyY_y"),
+                    InlineKeyboardButton(
+                        "مبرمج اسلام", url=f"https://t.me/S_D_H_A")
+                ],[
+                    InlineKeyboardButton(
+                        "قناه السورس", url=f"https://t.me/so_alfaa"),
+                ],[
+                    InlineKeyboardButton(
+                        "اغلاق", callback_data="close"),
+                ],
+          ]
+        ),
+    )
