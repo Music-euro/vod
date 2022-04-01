@@ -4,6 +4,12 @@ from strings import get_command
 from strings.filters import command
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
+from typing import Union
+
+from pyrogram.types import InlineKeyboardButton
+
+from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
+from YukkiMusic import app
 
 
 @app.on_message(
