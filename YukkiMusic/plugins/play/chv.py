@@ -20,8 +20,6 @@ async def khalid(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "𝘿𝙀𝙑 ¦ 𝙀𝙎𝙇𝘼𝙈", url=f"https://t.me/S_D_H_A"),
-                    InlineKeyboardButton(
-                        "مطورين السورس", callback_data=f"fft"),
                 ],
             ]
         ),
