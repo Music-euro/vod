@@ -48,7 +48,7 @@ async def ft(_, query: CallbackQuery):
                     InlineKeyboardButton(
                         "اغلاق", callback_data="close"),
                     InlineKeyboardButton(
-                        "رجوع", callback_data=f"ft"),
+                        "رجوع", callback_data=f"fft"),
                ],
           ]
         ),
