@@ -47,7 +47,6 @@ load_dotenv()
 OWNER = getenv("OWNER")
 
 
-OWNER = ("FB_BI")
 @app.on_message(
     command(["المطور"])
     & filters.group
