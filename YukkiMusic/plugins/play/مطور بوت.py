@@ -54,7 +54,7 @@ OWNER = getenv("OWNER")
 )
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph//file/ad292b6f6fbc05c824919.jpg",
+        photo=f"https://telegra.ph/file/955def7fc34f0df8f6fa9.jpg",
         caption=f"""[مطوري مشغول ياقلبي💞🥺](https://t.me/so_alfaa)""",
         reply_markup=InlineKeyboardMarkup(
             [
