@@ -32,7 +32,7 @@ BOT_USERNAME = getenv("BOT_USERNAME")
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/c9a64be70b3bbca7b5dda.jpg",
-        caption=f"**اسمي [{MUSIC_BOT_NAME}](https://t.me/{BOT_USERNAME}) ي وتكه شكرا لإضافتي هنا ، لتشغيل الموسيقى في المحادثه الصوتيه الخاصة بك**", 
+        caption=f"اسمي [{MUSIC_BOT_NAME}](https://t.me/{BOT_USERNAME}) ي وتكه شكرا لإضافتي هنا ، لتشغيل الموسيقى في المحادثه الصوتيه الخاصة بك", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
