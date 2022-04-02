@@ -24,19 +24,19 @@ BOT_USERNAME = getenv("BOT_USERNAME")
 
 
 @app.on_message(
-    command(["بوت"])
+    command(["بوت لورا"])
     & filters.group
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph//file/ad292b6f6fbc05c824919.jpg",
-        caption=f"""مبرمج سورس لورا""",
+        photo=f"https://telegra.ph/file/c9a64be70b3bbca7b5dda.jpg",
+        caption=f"""- مطورين سورس لورا .""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "𝘿𝙀𝙑 ¦ 𝙀𝙎𝙇𝘼𝙈", url=f"https://t.me/S_D_H_A"),
+                        "- ادخل هنا للوتاصل مه المطورين .", url=f"https://t.me/M_9_Z"),
                 ],[
                     InlineKeyboardButton(
                         "اضف البوت الي مجموعتك", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
