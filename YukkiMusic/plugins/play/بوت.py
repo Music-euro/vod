@@ -10,7 +10,18 @@ from pyrogram.types import InlineKeyboardButton
 from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
 from YukkiMusic import app
 
-BOT_USERNAME = ("LURA_MUSICBOT") 
+import re
+import sys
+from os import getenv
+
+from dotenv import load_dotenv
+from pyrogram import filters
+
+load_dotenv()
+
+BOT_USERNAME = getenv("BOT_USERNAME")
+
+
 
 @app.on_message(
     command(["بوت"])
