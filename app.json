@@ -42,6 +42,11 @@
         "description": "هتستخرج كود المونجو من هنا https://cloud.mongodb.com",
         "value": "",
         "required": false
+      }, 
+      "IMAG_BOT1": {
+        "description": "هتحط لينك الصوره بتاعه البوت",
+        "value": "",
+        "required": false
       },
       "MUSIC_BOT_NAME": {
         "description": "ضع هنا اسم البوت بدون زخرفه مثل { LURA }",
