@@ -43,7 +43,7 @@
         "value": "",
         "required": false
       }, 
-      "IMAG_BOT1": {
+      "IMG_BOT1": {
         "description": "هتحط لينك الصوره بتاعه البوت",
         "value": "",
         "required": false
