@@ -48,6 +48,11 @@
         "value": "",
         "required": true
       },
+      "BOT_USERNAME": {
+        "description": "ضع هنا يوزر البوت  مثل { LURA_MUSICBOT }",
+        "value": "",
+        "required": true
+      },
       "OWNER_ID": {
         "description": "ضع هنا ايدي مطور البوت",
         "value": "",
