@@ -25,7 +25,7 @@ BOT_USERNAME = getenv("BOT_USERNAME")
 
 
 @app.on_message(
-    command(["بوت لورا"])
+    command(["بوت"])
     & filters.group
     & ~filters.edited
 )
