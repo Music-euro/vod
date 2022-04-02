@@ -35,7 +35,7 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
 
 
 @app.on_message(
-    command(["سورس","السورس"])
+    command(["سورس لورا","لورا"])
     & filters.group
     & ~filters.edited
 )
@@ -64,14 +64,14 @@ async def hilo(client, message: Message, _):
 @app.on_callback_query(filters.regex("eslam"))
 async def eslam(_, query: CallbackQuery):
    await query.edit_message_text(
-       f"""للتواصل مع مبرمجين السورس اضغط علي احد الازرار""",
+       f"""- للتواصل مع مطورين سورس لورا اتبع الازرار .""",
        reply_markup=InlineKeyboardMarkup(
           [
                [
                     InlineKeyboardButton(
-                        "مبرمج ماديسون", url=f"https://t.me/MaDyY_y"),
+                        "- المبرمج ماديسون .", url=f"https://t.me/MaDyY_y"),
                     InlineKeyboardButton(
-                        "مبرمج اسلام", url=f"https://t.me/S_D_H_A")
+                        "- المبرمج اسلام .", url=f"https://t.me/S_D_H_A")
                 ],[
                     InlineKeyboardButton(
                         "قناه السورس", url=f"https://t.me/so_alfaa"),
