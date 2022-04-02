@@ -33,7 +33,7 @@ IMAG_BOT1 = getenv("IMG_BOT1")
 )
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/c9a64be70b3bbca7b5dda.jpg",
+        photo=f"{IMAG_BOT1}",
         caption=f"اسمي [{MUSIC_BOT_NAME}](https://t.me/{BOT_USERNAME}) ي وتكه شكرا لإضافتي هنا ، لتشغيل الموسيقى في المحادثه الصوتيه الخاصة بك", 
         reply_markup=InlineKeyboardMarkup(
             [
