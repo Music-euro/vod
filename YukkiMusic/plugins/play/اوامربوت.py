@@ -13,7 +13,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 )
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/02ff5eed4dc2a34cbc1f7.jpg",
+        photo=f"https://telegra.ph/file/c9a64be70b3bbca7b5dda.jpg",
         caption=f"""لاوامر الاغاني اضغط ⇐ ⓵\n\nلاوامر البوت اضغط ⇐ ②""",
         reply_markup=InlineKeyboardMarkup(
             [
