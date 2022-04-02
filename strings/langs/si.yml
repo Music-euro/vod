@@ -142,9 +142,9 @@ cplay_5 : "Only Channels are supported."
 cplay_6 : "You need to be the **Owner** of the channel[{0}] to connect it with this group.\n**Channel's Owner:** @{1}\n\nAlternatively you can link your group to that channel and then try connnecting with `/channelplay linked`"
 
 #Play
-play_1 : "🔄 Processing Query... Please Wait!"
-play_2 : "**🏷Channel Play Mode**\n\n🔄 Processing Query... Please Wait!\n**Linked Channel:** {0}"
-play_3 : "Failed to Process Query!"
+play_1 : "🔄من فضلك انتظر ... جاري التشغيل !"
+play_2 : "**🏷وضع القناة**\n\n🔄جاري التشغيل ... من فضلك انتظر !\n**رابط القناة:** {0}"
+play_3 : "فشل المعالجه !"
 play_4 : "🖇 **Admins Only Play**\nOnly Admins and Auth Users can play music in this group.\n\nChange mode via /playmode and if you're already admin, reload admincache via /admincache"
 play_5 : "Failed to process audio file.\n\nAudio File Size Should Be Less Than 100 mb"
 play_6 : "**Duration Limit Exceeded**\n\n**Allowed Duration: **{0} minute(s)\n**Received Duration:** {1} hour(s)"
@@ -187,9 +187,9 @@ playmode_1 : "Select the mode in which you want to play the queries inside your 
 playmode_2 : "Settings changed and saved successfully by {0}"
 
 #Stream 
-str_1 : "Please Provide M3u8 Links or Index Links."
-str_2 : "✅ Valid Stream Verified\n\nPlease wait processing link.."
-str_3 : "Unable to stream youtube live streams. No Live Format Found"
+str_1 : "  يرجى تقديم روابط M3u8 أو روابط الفهرس."
+str_2 : "✅ تم الحقق من البث بنجاح\n\nيرجى انتظار رابط المعالجة.."
+str_3 : "  غير قادر على بث البث المباشر على يوتيوب , لم يتم العثور على تنسيق مباشر"
 
 #TopPlay
 tracks_1 : "**Processing {0} Top 10 Playlist**\nThis could take some mins(around 3-4 mins).. Please Wait...\n\n**👤Requested By:** {1}\n\nCheck Top 10 tracks by /gstats"
