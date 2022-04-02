@@ -14,12 +14,12 @@
     "stack": "container",
     "env": {
       "API_ID": {
-        "description": "Get this value from https://my.telegram.org",
+        "description": "هتستخرجو من هنا https://my.telegram.org",
         "value": "",
         "required": true
       },
       "API_HASH": {
-        "description": "Get this value from https://my.telegram.org",
+        "description": "هتستخرجو من هنا https://my.telegram.org",
         "value": "",
         "required": true
       },
@@ -29,57 +29,57 @@
         "required": true
       },
       "AUTO_LEAVING_ASSISTANT": {
-        "description": "If you want your assistant to leave all chats automatically after some time.",
+        "description": "سيبها زي مهيا",
         "value": "True",
         "required": true
       },
       "BOT_TOKEN": {
-        "description": "A Bot's token from Botfather",
+        "description": "ضع هنا توكن البوت",
         "value": "",
         "required": true
       },
       "MONGO_DB_URI": {
-        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
+        "description": "هتستخرج كود المونجو من هنا https://cloud.mongodb.com",
         "value": "",
         "required": false
       },
       "MUSIC_BOT_NAME": {
-        "description": "A name for your Music Bot. Please don't use ascii characters",
+        "description": "ضع هنا اسم البوت بدون زخرفه مثل { LURA }",
         "value": "",
         "required": true
       },
       "OWNER_ID": {
-        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
+        "description": "ضع هنا ايدي مطور البوت",
         "value": "",
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+        "description": "ضع هنا جلسة البايوجرام",
         "value": "",
         "required": true
       },
       "HEROKU_API_KEY": {
-        "description": "Your Heroku account's API key",
+        "description": "ضع هنا اي بي كي الخاص بحساب الهيروكو بتاعك",
         "value": "",
         "required": false
       },
       "HEROKU_APP_NAME": {
-        "description": "Your heroku app/bot's name",
+        "description": "ضع هنا اول اسم كتبتو ف ال app name",
         "value": "",
         "required": false
       },
       "LOG_GROUP_ID": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
+        "description": "ضع هنا ايدي الجروب الخاص ب اعدادات البوت",
         "value": "",
         "required": true
       },
       "UPSTREAM_REPO": {
-        "description": "If you dont know this, Leave as it is",
+        "description": "ضع هنا رابط جيت هاب السورس",
         "value": "https://github.com/GG-TT/allura",
         "required": true
       },
       "UPSTREAM_BRANCH": {
-        "description": "Upstream Repo's Branch Name",
+        "description": "سيبها زي مهيا",
         "value": "master",
         "required": true
       }
