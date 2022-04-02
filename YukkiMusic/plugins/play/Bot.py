@@ -22,6 +22,8 @@ load_dotenv()
 
 BOT_USERNAME = getenv("BOT_USERNAME")
 
+IMAG_BOT1 = getenv("IMG_BOT1")
+
 
 
 @app.on_message(
