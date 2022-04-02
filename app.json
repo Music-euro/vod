@@ -50,7 +50,7 @@
       },
       "BOT_USERNAME": {
         "description": "ضع هنا يوزر البوت  مثل { LURA_MUSICBOT }",
-        "value": "",
+        "value": "LURA_MUSICBOT",
         "required": true
       },
       "OWNER_ID": {
