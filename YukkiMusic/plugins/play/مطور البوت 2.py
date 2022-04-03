@@ -28,7 +28,7 @@ OWNER = getenv("OWNER")
 
 
 @app.on_message(
-    command(["المطور"])
+    command(["مطور"])
     & filters.group
     & ~filters.edited
 )
