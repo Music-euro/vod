@@ -24,6 +24,7 @@ BOT_USERNAME = getenv("BOT_USERNAME")
 
 IMG_BOT1 = getenv("IMG_BOT1")
 
+OWNER = getenv("OWNER")
 
 
 @app.on_message(
@@ -39,7 +40,7 @@ async def khalid(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "- ادخل هنا للوتاصل مع المطورين .", url=f"https://t.me/M_9_Z"),
+                        "- Devoleper Bot .", url=f"https://t.me/{OWNER}")
                 ],[
                     InlineKeyboardButton(
                         "اضف البوت الي مجموعتك", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
