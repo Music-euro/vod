@@ -48,7 +48,7 @@ async def tt(_, query: CallbackQuery):
                     InlineKeyboardButton(
                         "اغلاق", callback_data="close"),
                     InlineKeyboardButton(
-                        "رجوع", callback_data="ft"),
+                        "رجوع", callback_data="back"),
                ],
           ]
         ),
