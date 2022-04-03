@@ -35,7 +35,7 @@ OWNER = getenv("OWNER")
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{IMG_BOT2}",
-        caption=f"اسمي [{MUSIC_BOT_NAME}](https://t.me/{BOT_USERNAME}) يقلبي 🙄💕", 
+       caption=f"""[مطوري مشغول ياقلبي💞🥺](https://t.me/{OWNER})""", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
