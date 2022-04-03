@@ -43,7 +43,6 @@ from pyrogram import filters
 
 load_dotenv()
 
-IMG_BOT1 = getenv("IMG_BOT2")
 
 
 OWNER = getenv("OWNER")
@@ -56,7 +55,7 @@ OWNER = getenv("OWNER")
 )
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"{IMG_BOT2}",
+        photo=f"https://telegra.ph/file/4191736925ebb246c6702.jpg",
         caption=f"""[مطوري مشغول ياقلبي💞🥺](https://t.me/so_alfaa)""",
         reply_markup=InlineKeyboardMarkup(
             [
