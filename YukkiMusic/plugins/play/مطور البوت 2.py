@@ -22,7 +22,7 @@ load_dotenv()
 
 BOT_USERNAME = getenv("BOT_USERNAME")
 
-IMG_BOT2 = getenv("IMG_BOT2")
+IMG_DEV1 = getenv("IMG_DEV1")
 
 OWNER = getenv("OWNER")
 
@@ -34,7 +34,7 @@ OWNER = getenv("OWNER")
 )
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"{IMG_BOT2}",
+        photo=f"{IMG_DEV1}",
        caption=f"""[مطوري مشغول ياقلبي💞🥺](https://t.me/{OWNER})""", 
         reply_markup=InlineKeyboardMarkup(
             [
