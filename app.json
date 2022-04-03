@@ -48,6 +48,11 @@
         "value": "",
         "required": false
       },
+      "IMG_BOT2": {
+        "description": "هتحط هنا رابط صورة مطور البوت",
+        "value": "",
+        "required": false
+      },
       "MUSIC_BOT_NAME": {
         "description": "ضع هنا اسم البوت بدون زخرفه مثل { LURA }",
         "value": "",
