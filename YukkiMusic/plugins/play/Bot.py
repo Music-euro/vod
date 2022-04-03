@@ -27,7 +27,7 @@ IMG_BOT1 = getenv("IMG_BOT1")
 
 
 @app.on_message(
-    command(["بوت"])
+    command(["البوت"])
     & filters.group
     & ~filters.edited
 )
