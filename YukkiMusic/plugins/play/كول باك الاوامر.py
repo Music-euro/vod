@@ -60,4 +60,16 @@ async def back(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""لاوامر الاغاني اضغط ⇐ ⓵\n\nلاوامر البوت اضغط ⇐ ②""",
        reply_markup=InlineKeyboardMarkup(
- [ [ InlineKeyboardButton( "⓵", callback_data=f"tt"), InlineKeyboardButton( "②", callback_data=f"tt"), ],[ InlineKeyboardButton( "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", callback_data=f"fft"), ], ] ), )
+            [
+                [
+                      InlineKeyboardButton(
+                        "⓵", callback_data=f"tt"),
+                    InlineKeyboardButton(
+                        "②", callback_data=f"tt"),
+                ],[
+                    InlineKeyboardButton(
+                        "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", callback_data=f"fft"),
+                ],
+            ]
+        ),
+    )
