@@ -7,7 +7,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 
 
 @app.on_message(
-    command(["افتار"])
+    command(["افتار","افتارر","افاتار","افتاار","افيتار","افاتارر"])
     & filters.group
     & ~filters.edited
 )
