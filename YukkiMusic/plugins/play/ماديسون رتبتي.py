@@ -66,20 +66,16 @@ def ghost(func: Callable) -> Callable:
             return await func(client, message)
           
 @app.on_message(
-    command(["رتبتي"])
-    & filters.group
-    & ~filters.edited
-)
-@ghost
-async def ghostt(client, m: Message):
+command(["رتبتي"]) & filters.user('OWNER_ID'))
+async def motawer(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"لينك الصوره.jpg",
-        caption=f"""النص اللي تحت الصوره""",
+        photo=f"{IMG_DEV1}",
+        caption=f"""رتبتك هيا , مطوري يقلبي 🙄❤️ .""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "اسم الكيب", url=f"اللينك اللي ف الكيب")
+                       "- Devoleper Bot .", url=f"https://t.me/{OWNER}")
                 ]
             ]
         ),
