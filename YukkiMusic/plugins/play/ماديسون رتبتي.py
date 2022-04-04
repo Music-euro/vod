@@ -33,7 +33,7 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 load_dotenv()
 
-OWNER = getenv("OWNER_ID")
+OWNER_ID = getenv("OWNER_ID")
 
 
 @app.on_message(
