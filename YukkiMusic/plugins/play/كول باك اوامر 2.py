@@ -33,8 +33,8 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 
 
-@app.on_callback_query(filters.regex("ttt"))
-async def ttt(_, query: CallbackQuery):
+@app.on_callback_query(filters.regex("ddd"))
+async def ddd(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""\n\n╭── • [- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .](https://t.me/so_alfaa) • ──╮\n\n""",
        reply_markup=InlineKeyboardMarkup(
@@ -65,7 +65,7 @@ async def back1(_, query: CallbackQuery):
                       InlineKeyboardButton(
                         "⓵", callback_data=f"tt"),
                     InlineKeyboardButton(
-                        "②", callback_data=f"ttt"),
+                        "②", callback_data=f"ddd"),
                 ],[
                     InlineKeyboardButton(
                         "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", callback_data=f"fft"),
