@@ -51,22 +51,22 @@ from os import getenv
 from dotenv import load_dotenv
 from pyrogram import filters
 
+IMG_DEV1 = getenv("IMG_DEV1")
 OWNER_ID = getenv("OWNER_ID")
 OWNER = getenv("OWNER")
 
 
 @app.on_message(
-    command(["رتبتي"])
-    & filters.user(OWNER))
+command(["رتبتي"])
 async def motawer(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/02ff5eed4dc2a34cbc1f7.jpg",
-        caption=f"""- ماديسون مبرمج السورس .""",
+        photo=f"{IMG_DEV1}",
+        caption=f"""رتبتك هيا , مطوري يقلبي 🙄❤️ .""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "◜ 𝙈َ𝙖 𝘿ِ𝙞 𝙎ُ𝙤𝙉 ◞", url=f"https://t.me/MaDyY_y")
+                       "- Devoleper Bot .", url=f"https://t.me/{OWNER}")
                 ]
             ]
         ),
