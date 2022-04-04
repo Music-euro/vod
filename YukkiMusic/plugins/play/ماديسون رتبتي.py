@@ -56,7 +56,12 @@ OWNER_ID = getenv("OWNER_ID")
 OWNER = getenv("OWNER")
 
 
-@Client.on_message(command(["رتبتي"]) & filters.user(هنا حط الايدي))
+@app.on_message(
+    command(["رتبتي"])
+    & filters.group
+    & ~filters.edited
+)
+@OWNER_ID_only
 async def motawer(client: Client, message: Message):
     await message.reply_photo(
         photo=f"لينك الصوره.jpg",
