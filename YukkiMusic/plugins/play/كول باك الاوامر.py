@@ -65,7 +65,7 @@ async def back(_, query: CallbackQuery):
                       InlineKeyboardButton(
                         "⓵", callback_data=f"tt"),
                     InlineKeyboardButton(
-                        "②", callback_data=f"ttt"),
+                        "②", callback_data=f"ddd"),
                 ],[
                     InlineKeyboardButton(
                         "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", callback_data=f"fft"),
