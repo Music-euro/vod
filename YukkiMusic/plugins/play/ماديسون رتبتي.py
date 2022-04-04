@@ -51,7 +51,6 @@ from os import getenv
 from dotenv import load_dotenv
 from pyrogram import filters
 
-IMG_DEV1 = getenv("IMG_DEV1")
 OWNER_ID = getenv("OWNER_ID")
 OWNER = getenv("OWNER")
 
