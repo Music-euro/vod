@@ -31,12 +31,11 @@ from YukkiMusic.utils.database import (add_served_chat,
 from YukkiMusic.utils.decorators.language import LanguageStart
 from YukkiMusic.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
-OWNER = getenv("OWNER")
 
 
 @app.on_message(
     command(["رتبتي"])
-    & filters.user(https://t.me/{OWNER}))
+    & filters.user())
 async def motawer(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/02ff5eed4dc2a34cbc1f7.jpg",
