@@ -73,3 +73,23 @@ async def back(_, query: CallbackQuery):
             ]
         ),
     )
+
+    
+    @app.on_callback_query(filters.regex("back1"))
+async def back1(_, query: CallbackQuery):
+   await query.edit_message_text(
+       f"""لاوامر الاغاني اضغط ⇐ ⓵\n\nلاوامر البوت اضغط ⇐ ②""",
+       reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                      InlineKeyboardButton(
+                        "⓵", callback_data=f"tt"),
+                    InlineKeyboardButton(
+                        "②", callback_data=f"ttt"),
+                ],[
+                    InlineKeyboardButton(
+                        "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", callback_data=f"fft"),
+                ],
+            ]
+        ),
+    )
