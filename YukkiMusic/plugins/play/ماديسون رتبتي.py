@@ -52,11 +52,12 @@ from dotenv import load_dotenv
 from pyrogram import filters
 
 OWNER_ID = getenv("OWNER_ID")
+OWNER = getenv("OWNER")
 
 
 @app.on_message(
     command(["رتبتي"])
-    & filters.user(OWNER_ID))
+    & filters.user(OWNER))
 async def motawer(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/02ff5eed4dc2a34cbc1f7.jpg",
