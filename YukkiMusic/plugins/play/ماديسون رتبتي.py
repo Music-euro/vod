@@ -62,7 +62,7 @@ OWNER = getenv("OWNER")
     & ~filters.edited
 )
 @OWNER_ID
-async def motawer(client: Client, message: Message):
+async def motawer(client, message: Message, _):
     await message.reply_photo(
         photo=f"لينك الصوره.jpg",
         caption=f"""النص اللي تحت الصوره""",
