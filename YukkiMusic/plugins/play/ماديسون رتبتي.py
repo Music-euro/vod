@@ -70,7 +70,7 @@ def ghost(func: Callable) -> Callable:
     & filters.group
     & ~filters.edited
 )
-@OWNER_ID
+@ghost
 async def ghostt(client, m: Message):
     await message.reply_photo(
         photo=f"لينك الصوره.jpg",
