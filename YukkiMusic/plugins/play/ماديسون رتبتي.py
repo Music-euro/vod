@@ -31,6 +31,7 @@ from YukkiMusic.utils.database import (add_served_chat,
 from YukkiMusic.utils.decorators.language import LanguageStart
 from YukkiMusic.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
+OWNER = getenv("OWNER")
 
 
 @app.on_message(
