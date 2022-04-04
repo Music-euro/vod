@@ -56,17 +56,16 @@ OWNER_ID = getenv("OWNER_ID")
 OWNER = getenv("OWNER")
 
 
-@app.on_message(
-command(["رتبتي"]) & filters.user(OWNER_ID))
+@Client.on_message(command(["رتبتي"]) & filters.user(هنا حط الايدي))
 async def motawer(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"{IMG_DEV1}",
-        caption=f"""رتبتك هيا , مطوري يقلبي 🙄❤️ .""",
+        photo=f"لينك الصوره.jpg",
+        caption=f"""النص اللي تحت الصوره""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                       "- Devoleper Bot .", url=f"https://t.me/{OWNER}")
+                        "اسم الكيب", url=f"اللينك اللي ف الكيب")
                 ]
             ]
         ),
