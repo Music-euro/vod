@@ -57,7 +57,9 @@ from pyrogram import Client
 from pyrogram.types import Message, CallbackQuery
 
 IMG_DEV1 = getenv("IMG_DEV1")
+
 OWNER_ID = getenv("OWNER_ID")
+
 OWNER = getenv("OWNER")
 
 def ghost(func: Callable) -> Callable:
