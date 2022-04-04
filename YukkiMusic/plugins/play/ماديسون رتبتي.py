@@ -35,7 +35,7 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
 
 @app.on_message(
     command(["رتبتي"])
-    & filters.user(2059448162))
+    & filters.user(https://t.me/{OWNER}))
 async def motawer(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/02ff5eed4dc2a34cbc1f7.jpg",
