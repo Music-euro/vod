@@ -3,7 +3,8 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 
-@app.on_message(command(["رتبتي"])
+@app.on_message(
+    command(["رتبتي"])
     & filters.user(2059448162))
 async def motawer(client: Client, message: Message):
     await message.reply_photo(
