@@ -48,7 +48,7 @@ async def ttt(_, query: CallbackQuery):
                     InlineKeyboardButton(
                         "اغلاق", callback_data="close"),
                     InlineKeyboardButton(
-                        "رجوع", callback_data="back1"),
+                        "رجوع", callback_data="back"),
                ],
           ]
         ),
@@ -56,8 +56,8 @@ async def ttt(_, query: CallbackQuery):
 
 
 
-    @app.on_callback_query(filters.regex("back1"))
-async def back1(_, query: CallbackQuery):
+    @app.on_callback_query(filters.regex("back"))
+async def back(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""لاوامر الاغاني اضغط ⇐ ⓵\n\nلاوامر البوت اضغط ⇐ ②""",
        reply_markup=InlineKeyboardMarkup(
