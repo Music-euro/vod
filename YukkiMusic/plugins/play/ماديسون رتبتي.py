@@ -71,7 +71,7 @@ def ghost(func: Callable) -> Callable:
     & ~filters.edited
 )
 @OWNER_ID
-async def mor(client, message: Message, _):
+async def ghostt(client, m: Message):
     await message.reply_photo(
         photo=f"لينك الصوره.jpg",
         caption=f"""النص اللي تحت الصوره""",
