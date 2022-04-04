@@ -33,12 +33,12 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 load_dotenv()
 
-OWNER = getenv("OWNER")
+OWNER = getenv("OWNER_ID")
 
 
 @app.on_message(
     command(["رتبتي"])
-    & filters.user(https://t.me/{OWNER}))
+    & filters.user({OWNER_ID}))
 async def motawer(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/02ff5eed4dc2a34cbc1f7.jpg",
