@@ -51,12 +51,13 @@ from os import getenv
 from dotenv import load_dotenv
 from pyrogram import filters
 
+IMG_DEV1 = getenv("IMG_DEV1")
 OWNER_ID = getenv("OWNER_ID")
 OWNER = getenv("OWNER")
 
 
 @app.on_message(
-command(["رتبتي"])
+command(["رتبتي"]) & filters.user(OWNER_ID))
 async def motawer(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{IMG_DEV1}",
