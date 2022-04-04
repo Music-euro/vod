@@ -50,12 +50,21 @@ from os import getenv
 
 from dotenv import load_dotenv
 from pyrogram import filters
+import traceback
+from functools import partial, wraps
+from typing import Callable, Union, Optional
+from pyrogram import Client
+from pyrogram.types import Message, CallbackQuery
 
 IMG_DEV1 = getenv("IMG_DEV1")
 OWNER_ID = getenv("OWNER_ID")
 OWNER = getenv("OWNER")
 
-
+def ghost(func: Callable) -> Callable:
+    async def ghost(client: Client, message: Message):
+        if message.from_user.id in OWNER_ID:
+            return await func(client, message)
+          
 @app.on_message(
     command(["رتبتي"])
     & filters.group
