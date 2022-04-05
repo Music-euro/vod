@@ -110,25 +110,3 @@ async def showid(_, message: Message):
 
 
 
-@app.on_message(
-    command(["انا مين"])
-    & filters.group
-    & ~filters.edited
-)
-async def anamen(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"{IMG_DEV1}",
-       caption=f"""انت ي قلبي {message.from_user.mention()}""", 
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "- Devoleper Bot .", url=f"https://t.me/{message.from_user.mention()}")
-                ],[
-                    InlineKeyboardButton(
-                        "اضف البوت الي مجموعتك", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
-                ],
-            ]
-        ),
-    ) 
-
