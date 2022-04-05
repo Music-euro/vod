@@ -42,7 +42,7 @@ async def khid(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "◜ 𝙈َ𝙖 𝘿ِ𝙞 𝙎ُ𝙤𝙉 ◞", url=f"https://t.me/{from_user.mention()}"),
+                        "{message.from_user.mention()}", url=f"tg://settings"),
                 ],[
                     InlineKeyboardButton(
                         "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", callback_data=f"fft"),
