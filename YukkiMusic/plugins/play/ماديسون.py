@@ -30,20 +30,17 @@ async def khalid(client: Client, message: Message):
 
 
 @app.on_message(
-    command(["انا"])
+    command(["انا مين"])
     & filters.group
     & ~filters.edited
 )
 async def khid(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/02ff5eed4dc2a34cbc1f7.jpg",
-        caption=f"""انت يقلبي {message.from_user.mention()}""",
+        caption=f"""انت يقلبي {message.from_user.mention()} 🙈🖤🥺""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                        "{message.from_user.mention()}", url=f"tg://settings"),
-                ],[
                     InlineKeyboardButton(
                         "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", callback_data=f"fft"),
                 ],
