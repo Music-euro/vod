@@ -42,7 +42,7 @@ async def khid(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", callback_data=f"fft"),
+                        "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", url=f"https://t.me/so_alfaa"),
                 ],
             ]
         ),
