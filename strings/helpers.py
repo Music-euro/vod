@@ -9,18 +9,19 @@
 
 HELP_1 = """✅**<u>Admin Commands:</u>**
 
-**c** stands for channel play.
+**ق** اوامر خاصه بالقناه
 
-/pause or /cpause - Pause the playing music.
-/resume or /cresume- Resume the paused music.
-/mute or /cmute- Mute the playing music.
-/unmute or /cunmute- Unmute the muted music.
-/skip or /cskip- Skip the current playing music.
-/stop or /cstop- Stop the playing music.
+وقف و ق وقف - لتوقيف الاغاني مؤقتا.
+كمل و ق كمل- لتكمله الاغنيه.
+اسكت و ق اسكت- لكتم الاغنيه.
+اتكلم و ق اتكلم - لالغاء كتم الاغنيه.
+تخطي و ق تخطي - لنخطي الاغنيه الحاليه.
+ايقاف و انهاء او ق ايقاف وق انهاء - لايقاف تشغيل الاغاني.
 /shuffle or /cshuffle- Randomly shuffles the queued playlist.
 /seek or /cseek - Forward Seek the music to your duration
 /seekback or /cseekback - Backward Seek the music to your duration
 /restart - Restart bot for your chat .
+[- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .](https://t.me/so_alfaa)
 
 
 ✅<u>**Specific Skip:**</u>
