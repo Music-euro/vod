@@ -68,7 +68,7 @@ def ghost(func: Callable) -> Callable:
             return await func(client, message)
           
 @app.on_message(
-    command(["رتبتي"])
+    command(["jiugugi"])
     & filters.user("OWNER_ID"))
 async def motawer(client: Client, message: Message):
     await message.reply_photo(
