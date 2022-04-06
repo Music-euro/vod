@@ -60,6 +60,12 @@ def get_file_id(msg: Message):
     & filters.group
     & ~filters.edited
 )
+    if message.from_user.id in SUDOERS:
+        await message.reply_text("مطور")
+    else:
+        await message.reply_text("عضو")
+    usr = await client.get_users(5274610090)
+    name = usr.first_name
     async for photo in client.iter_profile_photos(5274610090, limit=1):
                     await message.reply_photo(photo.file_id,       caption=f"""[مطوري مشغول ياقلبي💞🥺](https://t.me/{OWNER})""", 
         reply_markup=InlineKeyboardMarkup(
