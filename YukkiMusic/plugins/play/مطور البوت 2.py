@@ -10,6 +10,7 @@ from pyrogram.types import InlineKeyboardButton
 from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
 from YukkiMusic import app
 from config import BANNED_USERS, MUSIC_BOT_NAME
+from YukkiMusic.misc import SUDOERS
 
 import re
 import sys
@@ -60,6 +61,10 @@ def get_file_id(msg: Message):
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
+    if m.from_user.id in SUDOERS:
+        await message.reply_text("مطور")
+    else:
+        await message.reply_text("عضو")
     async for photo in client.iter_profile_photos(5274610090, limit=1):
                     await message.reply_photo(photo.file_id,       caption=f"""[مطوري مشغول ياقلبي💞🥺](https://t.me/{OWNER})""", 
         reply_markup=InlineKeyboardMarkup(
