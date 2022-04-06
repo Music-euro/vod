@@ -43,6 +43,11 @@
         "value": "",
         "required": false
       }, 
+      "BOTID": {
+        "description": "حط ايدي البوت يكسمك",
+        "value": "",
+        "required": false
+      },
       "IMG_BOT1": {
         "description": "هتحط لينك الصوره بتاعه البوت",
         "value": "",
