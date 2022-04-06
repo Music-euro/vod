@@ -21,12 +21,11 @@ from pyrogram import filters
 
 load_dotenv()
 
-BOTID = getenv("BOTID")
-
 BOT_USERNAME = getenv("BOT_USERNAME")
 
-OWNER = getenv("OWNER")
+IMG_DEV1 = getenv("IMG_DEV1")
 
+OWNER = getenv("OWNER")
 
 
 
@@ -57,12 +56,12 @@ def get_file_id(msg: Message):
 
 
 @app.on_message(
-    command(["بوت"])
+    command(["مطور"])
     & filters.group
     & ~filters.edited
 )
     async for photo in client.iter_profile_photos(5274610090, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"اسمي [{MUSIC_BOT_NAME}](https://t.me/{BOT_USERNAME}) يقلبي 🙄💕", 
+                    await message.reply_photo(photo.file_id,       caption=f"""[مطوري مشغول ياقلبي💞🥺](https://t.me/{OWNER})""", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
