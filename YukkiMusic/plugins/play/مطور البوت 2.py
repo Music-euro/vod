@@ -61,7 +61,7 @@ def get_file_id(msg: Message):
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
-    if m.from_user.id in SUDOERS:
+    if message.from_user.id in SUDOERS:
         await message.reply_text("مطور")
     else:
         await message.reply_text("عضو")
