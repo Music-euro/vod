@@ -27,7 +27,6 @@ BOT_USERNAME = getenv("BOT_USERNAME")
 
 OWNER = getenv("OWNER")
 
-dd = ("2059448162")
 
 
 
@@ -62,7 +61,7 @@ def get_file_id(msg: Message):
     & filters.group
     & ~filters.edited
 )
-    async for photo in client.iter_profile_photos(({BOTID}) , limit=1):
+    async for photo in client.iter_profile_photos("{BOTID}", limit=1):
                     await message.reply_photo(photo.file_id,       caption=f"اسمي [{MUSIC_BOT_NAME}](https://t.me/{BOT_USERNAME}) يقلبي 🙄💕", 
         reply_markup=InlineKeyboardMarkup(
             [
