@@ -62,8 +62,7 @@ def get_file_id(msg: Message):
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
-async for photo in client.iter_profile_photos(5274610090, limit=1):    name = usr.first_name
-    async for photo in client.iter_profile_photos({BOTID}), 
+    async for photo in client.iter_profile_photos(5274610090, limit=1):    name = usr.first_name
                     await message.reply_photo(photo.file_id,       caption=f"""[مطوري مشغول ياقلبي💞🥺](https://t.me/{OWNER})""", 
         reply_markup=InlineKeyboardMarkup(
             [
