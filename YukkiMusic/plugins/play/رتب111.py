@@ -54,7 +54,7 @@ def get_file_id(msg: Message):
                 return obj
               
               
-              @app.on_message(
+@app.on_message(
     command(["رتبتي"])
     & filters.group
     & ~filters.edited
