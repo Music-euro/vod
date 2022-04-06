@@ -60,6 +60,7 @@ def get_file_id(msg: Message):
     & filters.group
     & ~filters.edited
 )
+async def khalid(client: Client, message: Message):
     if message.from_user.id in SUDOERS:
         await message.reply_text("مطور")
     else:
