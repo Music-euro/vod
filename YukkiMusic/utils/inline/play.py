@@ -10,7 +10,6 @@
 from pyrogram.types import InlineKeyboardButton
 from pyrogram.types import (InlineKeyboardButton,CallbackQuery,
                             InlineKeyboardMarkup, Message)
-MUTE_COMMAND = get_command("MUTE_COMMAND")
 def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
         [
