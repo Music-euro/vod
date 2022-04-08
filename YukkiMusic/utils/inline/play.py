@@ -10,6 +10,7 @@
 from pyrogram.types import InlineKeyboardButton
 from pyrogram.types import (InlineKeyboardButton,CallbackQuery,
                             InlineKeyboardMarkup, Message)
+MUTE_COMMAND = get_command("MUTE_COMMAND")
 def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
         [
@@ -58,6 +59,11 @@ def stream_markup(_, videoid):
             ),
             InlineKeyboardButton(
                 text=_["PL_B_13"], url=f"https://t.me/LURA205"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                        "كتم", callback_data=f"MUTE_COMMAND"),
             ),
         ],
         [
