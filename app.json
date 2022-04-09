@@ -43,7 +43,7 @@
         "value": "",
         "required": false
       }, 
-      "ID_NAME": {
+      "BOTID": {
         "description": "حط ايدي المطور بس يكسمك",
         "value": "",
         "required": false
