@@ -58,7 +58,7 @@ def get_file_id(msg: Message):
 async def khalid(client: Client, message: Message):
     usr = await client.get_users(m.from_user.id)
     name = usr.first_name
-    async for photo in client.iter_profile_photos(m.from_user.id, limit=1):
+    async for photo in client.iter_profile_photos(message.from_user.id, limit=1):
                     await message.reply_photo(photo.file_id,       caption=f"""[عايز اي انتا 😒](https://t.me/{m.from_user.id})""", 
         reply_markup=InlineKeyboardMarkup(
             [
