@@ -27,7 +27,7 @@ IMG_DEV1 = getenv("IMG_DEV1")
 
 OWNER = getenv("OWNER")
 
-ID_NAME = getenv("ID_NAME")
+BOTID = getenv("BOTID")
 
 
 
@@ -62,9 +62,9 @@ def get_file_id(msg: Message):
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
-    usr = await client.get_users(ID_NAME)
+    usr = await client.get_users(BOTID)
     name = usr.first_name
-    async for photo in client.iter_profile_photos(ID_NAME, limit=1):
+    async for photo in client.iter_profile_photos(BOTID, limit=1):
                     await message.reply_photo(photo.file_id,       caption=f"""[مطوري مشغول ياقلبي💞🥺](https://t.me/{OWNER})""", 
         reply_markup=InlineKeyboardMarkup(
             [
