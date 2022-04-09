@@ -7,6 +7,10 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 from typing import Union
 from pyrogram.types import InlineKeyboardButton
 
+from config import LOG, LOG_GROUP_ID
+from YukkiMusic import app
+from YukkiMusic.utils.database import is_on_off
+
 from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
 from YukkiMusic import app
 from config import BANNED_USERS, MUSIC_BOT_NAME
@@ -59,7 +63,7 @@ async def khalid(client: Client, message: Message):
     usr = await client.get_users(message.from_user.id)
     name = usr.first_name
     async for photo in client.iter_profile_photos(message.from_user.id, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""[عايز اي انتا 😒](https://t.me/{message.from_user.id})""", 
+                    await message.reply_photo(photo.file_id,       caption=f"""[عايز اي انتا 😒](https://t.me/{message.from_user.id})\n\n**Username:** @{message.from_user.username}""", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
