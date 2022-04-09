@@ -158,7 +158,7 @@ async def khalid(client: Client, message: Message):
     & ~filters.edited
 )
 async def khid(client: Client, message: Message):
-    if message.from_user.id in DEV:
+    if message.from_user.id in (DEV)
         await message.reply_text("مبرمج السورس")
     else:
         await message.reply_text("عضو")
