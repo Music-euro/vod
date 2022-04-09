@@ -19,16 +19,17 @@ from os import getenv
 from dotenv import load_dotenv
 from pyrogram import filters
 
-
 load_dotenv()
 
 BOT_USERNAME = getenv("BOT_USERNAME")
 
-IMG_BOT1 = getenv("IMG_BOT1")
+IMG_DEV1 = getenv("IMG_DEV1")
 
 OWNER = getenv("OWNER")
 
-BOTID = getenv("BOT_ID")
+BOTID = getenv("BOTID11")
+
+
 
 
 def get_file_id(msg: Message):
@@ -53,7 +54,7 @@ def get_file_id(msg: Message):
                 setattr(obj, "message_type", message_type)
                 return obj
 
-            
+
 
 @app.on_message(
     command(["البوت"])
@@ -61,19 +62,20 @@ def get_file_id(msg: Message):
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
-    usr = await client.get_users(BOT_ID)
+    usr = await client.get_users(BOTID11)
     name = usr.first_name
-    async for photo in client.iter_profile_photos(BOT_ID, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"اسمي [{MUSIC_BOT_NAME}](https://t.me/{BOT_USERNAME}) يقلبي 🙄💕", 
+    async for photo in client.iter_profile_photos(BOTID11, limit=1):
+                    await message.reply_photo(photo.file_id,       caption=f"""[مطوري مشغول ياقلبي💞🥺](https://t.me/{OWNER})""", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "name", url=f"https://t.me/{OWNER}")
+                        name, url=f"https://t.me/{OWNER}")
                 ],[
                     InlineKeyboardButton(
                         "اضف البوت الي مجموعتك", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
                 ],
             ]
         ),
-    ) 
+    )
+
