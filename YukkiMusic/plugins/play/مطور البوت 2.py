@@ -5,6 +5,7 @@ from strings.filters import command
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from typing import Union
+from config.config import OWNER_ID
 from pyrogram.types import InlineKeyboardButton
 
 from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
@@ -28,6 +29,8 @@ IMG_DEV1 = getenv("IMG_DEV1")
 OWNER = getenv("OWNER")
 
 BOTID = getenv("BOTID")
+
+OWNER_ID = getenv("OWNER_ID")
 
 
 
@@ -62,9 +65,9 @@ def get_file_id(msg: Message):
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
-    usr = await client.get_users(BOTID)
+    usr = await client.get_users(OWNER_ID)
     name = usr.first_name
-    async for photo in client.iter_profile_photos(BOTID, limit=1):
+    async for photo in client.iter_profile_photos(OWNER_ID, limit=1):
                     await message.reply_photo(photo.file_id,       caption=f"""[مطوري مشغول ياقلبي💞🥺](https://t.me/{OWNER})""", 
         reply_markup=InlineKeyboardMarkup(
             [
