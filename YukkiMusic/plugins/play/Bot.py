@@ -43,7 +43,7 @@ BOT_USERNAME = getenv("BOT_USERNAME")
 
 IMG_BOT1 = getenv("IMG_BOT1")
 OWNER = getenv("OWNER")
-BOTID = getenv("BOTID")
+BOTID = getenv("BOTID1")
 
 
 def get_file_id(msg: Message):
@@ -76,9 +76,9 @@ def get_file_id(msg: Message):
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
-    usr = await client.get_users(BOTID)
+    usr = await client.get_users(BOTID1)
     name = usr.first_name
-    async for photo in client.iter_profile_photos(message.from_user.id, limit=1):
+    async for photo in client.iter_profile_photos(BOTID1, limit=1):
                     await message.reply_photo(photo.file_id,       caption=f"اسمي [{MUSIC_BOT_NAME}](https://t.me/{BOT_USERNAME}) يقلبي 🙄💕", 
         reply_markup=InlineKeyboardMarkup(
             [
