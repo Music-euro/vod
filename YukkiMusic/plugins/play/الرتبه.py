@@ -27,7 +27,7 @@ IMG_DEV1 = getenv("IMG_DEV1")
 
 OWNER = getenv("OWNER")
 
-
+BOTID = getenv("BOTID")
 
 
 
@@ -61,7 +61,7 @@ def get_file_id(msg: Message):
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
-    if message.from_user.id in SUDOERS:
+    usr = await client.get_users(BOTID)
         await message.reply_text("مطور")
     else:
         await message.reply_text("عضو")
