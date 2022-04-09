@@ -56,15 +56,15 @@ def get_file_id(msg: Message):
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
-    usr = await client.get_users(message.from_user_id)
+    usr = await client.get_users(message.from_user.id)
     name = usr.first_name
-    async for photo in client.iter_profile_photos(message.from_user_id, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""[عايز اي انتا 😒](https://t.me/{message.from_user_id})""", 
+    async for photo in client.iter_profile_photos(message.from_user.id, limit=1):
+                    await message.reply_photo(photo.file_id,       caption=f"""[عايز اي انتا 😒](https://t.me/{message.from_user.id})""", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        name, url=f"https://t.me/{message.from_user_id}")
+                        name, url=f"https://t.me/{message.from_user.id}")
                 ],[
                     InlineKeyboardButton(
                         "اضف البوت الي مجموعتك", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
