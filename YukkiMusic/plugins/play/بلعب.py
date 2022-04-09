@@ -27,6 +27,7 @@ IMG_DEV1 = getenv("IMG_DEV1")
 
 OWNER = getenv("OWNER")
 
+DEV = getenv("DEV")
 
 
 
@@ -61,5 +62,14 @@ def get_file_id(msg: Message):
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
-    if message.from_user.id in rozrtba:
-rozrtba = ( ".「 مبرمج السورس 」." if user_id == 5246153486 or user_id == 2106210328 or user_id == 5246153486 else (".「 العضـو 」.") ) 
+    if message.from_user.id in SUDOERS:
+        await message.reply_text("مطور")
+    else:
+        await message.reply_text("عضو")
+
+
+async def khid(client: Client, message: Message):
+    if message.from_user.id in DEV:
+        await message.reply_text("مبرمج السورس")
+    else:
+        await message.reply_text("عضو")
