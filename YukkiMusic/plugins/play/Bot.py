@@ -61,7 +61,7 @@ def get_file_id(msg: Message):
     & filters.group
     & ~filters.edited
 )
-async def khalid(client: Client, message: Message):
+async def alid(client: Client, message: Message):
     usr = await client.get_users(BOTID11)
     name = usr.first_name
     async for photo in client.iter_profile_photos(BOTID11, limit=1):
