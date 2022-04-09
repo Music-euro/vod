@@ -40,6 +40,8 @@ OWNER = getenv("OWNER")
 
 ID_BOT1 = getenv("ID_BOT1")
 
+NAME_BOT = getenv("NAME_BOT")
+
 def get_file_id(msg: Message):
 
     if msg.media:
@@ -100,7 +102,7 @@ async def khalid(client: Client, message: Message):
 
     async for photo in client.iter_profile_photos(ID_BOT1, limit=1):
 
-                    await message.reply_photo(photo.file_id,       caption=f"اسمي [{name}](https://t.me/{BOT_USERNAME}) يقلبي 🙄💕", 
+                    await message.reply_photo(photo.file_id,       caption=f"اسمي {NAME_BOT} يقلبي 🙄💕", 
 
         reply_markup=InlineKeyboardMarkup(
 
