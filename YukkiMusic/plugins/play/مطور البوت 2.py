@@ -27,8 +27,6 @@ IMG_DEV1 = getenv("IMG_DEV1")
 
 OWNER = getenv("OWNER")
 
-BOTID = getenv("BOTID")
-
 ID_NAME = getenv("ID_NAME")
 
 
