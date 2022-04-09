@@ -48,6 +48,15 @@
         "value": "",
         "required": false
       },
+      "ID_BOT1": {
+
+        "description": "حط ايدي البوت بس يكسمك",
+
+        "value": "",
+
+        "required": false
+
+      },
       "IMG_BOT1": {
         "description": "هتحط لينك الصوره بتاعه البوت",
         "value": "",
