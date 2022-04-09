@@ -61,7 +61,7 @@ def get_file_id(msg: Message):
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
-    usr = await client.get_users(BOTID)
+  usr = await client.get_users(BOTID)
         await message.reply_text("مطور")
     else:
         await message.reply_text("عضو")
