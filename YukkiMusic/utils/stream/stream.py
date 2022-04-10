@@ -37,7 +37,7 @@ async def stream(
     result,
     chat_id,
     user_name,
-    elnqyb,
+    ghosttt,
     original_chat_id,
     video: Union[bool, str] = None,
     streamtype: Union[bool, str] = None,
@@ -212,7 +212,7 @@ async def stream(
             photo = await app.download_media(photo_id)
             img = await gen_thumb(vidid, photo)
             button = stream_markup(_, vidid)
-            await elnqyb.reply_photo(
+            await ghosttt.reply_photo(
                 photo=img,
                 caption=f"**Starting Stream Playing**\n\n**Song Name** : {title[:30]}\n**Duration Time** : {duration_min}\n**Request By** :{requester}",
                 reply_markup=InlineKeyboardMarkup(button),
@@ -289,8 +289,8 @@ async def stream(
             position = len(db.get(chat_id)) - 1
             requester = f"[{user_name}](tg://user?id={user_id})"
             button = telegram_markup(_)
-            await elnqyb.reply_photo(
-                photo=f"https://telegra.ph//file/87df80418564dd50949e8.jpg",
+            await ghosttt.reply_photo(
+                photo=f"https://telegra.ph/file/0b877fea1da6e376a906b.jpg",
                 caption=f"**File Add To Playlist** » {position}\n\n**Song Name** : {title[:20]}\n**Duration Time** : {duration_min}\n**Request By** :{requester}",
                 reply_markup=InlineKeyboardMarkup(button),
             )
@@ -317,7 +317,7 @@ async def stream(
             requester = f"[{user_name}](tg://user?id={user_id})"
             button = telegram_markup(_)
             await elnqyb.reply_photo(
-                photo=f"https://telegra.ph//file/87df80418564dd50949e8.jpg",
+                photo=f"https://telegra.ph/file/0b877fea1da6e376a906b.jpg",
                 caption=f"**Start Streaming Playing**\n\n**Song Name** : {title[:20]}\n**Duration Time** : {duration_min}\n**Request By** :{requester}",
                 reply_markup=InlineKeyboardMarkup(button),
             )
