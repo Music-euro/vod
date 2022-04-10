@@ -37,7 +37,6 @@ async def stream(
     result,
     chat_id,
     user_name,
-    ghosttt,
     original_chat_id,
     video: Union[bool, str] = None,
     streamtype: Union[bool, str] = None,
