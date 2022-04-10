@@ -95,6 +95,10 @@ def get_file_id(msg: Message):
 )
 
 async def khalid(client: Client, message: Message):
+        if message.chat.username:
+            chatusername = f"@{message.chat.username}"
+        else:
+            chatusername = "Public Group"
 
     usr = await client.get_users(message.from_user.id)
 
