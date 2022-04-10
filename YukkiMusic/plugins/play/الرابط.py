@@ -102,7 +102,7 @@ async def khalid(client: Client, message: Message):
 
     async for photo in client.iter_profile_photos(message.from_user.id, limit=1):
 
-                    await message.reply_photo(photo.file_id,       caption=f"""**Chat Link:** {chatusername}""", 
+                    await message.reply_photo(photo.file_id,       caption=f"**Chat Link:** {chatusername}", 
 
         reply_markup=InlineKeyboardMarkup(
 
