@@ -181,7 +181,7 @@ async def stream(
             photo = await app.download_media(photo_id)
             img = await gen_thumb(vidid, photo)
             button = stream_markup(_, vidid)
-            await elnqyb.reply_photo(
+            await ghosttt.reply_photo(
                 photo=img,
                 caption=f"**Track Add To Playlist** {position}\n\n**Song Name** : {title[:30]}\n**Duration Time** :{duration_min}\n**Request By** :{requester}",
                 reply_markup=InlineKeyboardMarkup(button),
