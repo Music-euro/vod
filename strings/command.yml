@@ -79,8 +79,8 @@ VARS_COMMAND : ["vars", "config"]
 
 
 #Basic Bot Commands
-UPDATE_COMMAND : ["update", "ت ح"]
-REBOOT_COMMAND : ["reboot", "تحديث"]
+UPDATE_COMMAND : ["update", "تحديث"]
+REBOOT_COMMAND : ["reboot"]
 AUTOEND_COMMAND : ["autoend"]
 
 #Private Bot Mode
