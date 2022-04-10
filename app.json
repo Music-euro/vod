@@ -49,7 +49,7 @@
         "required": false
       },
       "NAME_BOT": {
-        "description": حط اسم البوت سواء عربي او انجليزي",
+        "description": "حط اسم البوت سواء عربي او انجليزي",
         "value": "",
         "required": false
       },
