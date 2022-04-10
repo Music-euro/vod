@@ -29,10 +29,9 @@ def changeImageSize(maxWidth, maxHeight, image):
     return newImage
 
 
-async def gen_thumb(videoid, photo):
-    if os.path.isfile(f"{photo}.png"):
-
-        return f"{photo}.png"
+async def gen_thumb(videoid):
+    if os.path.isfile(f"cache/{videoid}.png"):
+        return f"cache/{videoid}.png"
 
     url = f"https://www.youtube.com/watch?v={videoid}"
     try:
@@ -68,19 +67,18 @@ async def gen_thumb(videoid, photo):
                     await f.close()
 
         youtube = Image.open(f"cache/thumb{videoid}.png")
-        ghosttt = Image.open(f"{photo}") 
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
-        background = image2.filter(filter=ImageFilter.BoxBlur(5))
+        background = image2.filter(filter=ImageFilter.BoxBlur(30))
         enhancer = ImageEnhance.Brightness(background)
         background = enhancer.enhance(0.6)
-        Xcenter = ghosttt.width / 2
-        Ycenter = ghosttt.height / 2
+        Xcenter = youtube.width / 2
+        Ycenter = youtube.height / 2
         x1 = Xcenter - 250
         y1 = Ycenter - 250
         x2 = Xcenter + 250
         y2 = Ycenter + 250
-        logo = ghosttt.crop((x1, y1, x2, y2))
+        logo = youtube.crop((x1, y1, x2, y2))
         logo.thumbnail((520, 520), Image.ANTIALIAS)
         logo = ImageOps.expand(logo, border=15, fill="white")
         background.paste(logo, (50, 100))
@@ -96,7 +94,7 @@ async def gen_thumb(videoid, photo):
         )
         draw.text(
             (600, 150),
-            "LURA PLAYING",
+            "NOW PLAYING",
             fill="white",
             stroke_width=2,
             stroke_fill="white",
@@ -143,10 +141,10 @@ async def gen_thumb(videoid, photo):
             font=arial,
         )
         try:
-            os.remove(f"{photo}.png")
+            os.remove(f"cache/thumb{videoid}.png")
         except:
             pass
-        background.save(f"{photo}.png")
-        return f"{photo}.png"
+        background.save(f"cache/{videoid}.png")
+        return f"cache/{videoid}.png"
     except Exception:
         return YOUTUBE_IMG_URL
