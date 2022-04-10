@@ -96,7 +96,7 @@ def get_file_id(msg: Message):
 
 async def khalid(client: Client, message: Message):
 
-    usr = await client.get_users(message.from_user.chatusername)
+    usr = await client.get_users(message.from_chatusername.id)
 
     name = usr.first_name
 
@@ -112,7 +112,7 @@ async def khalid(client: Client, message: Message):
 
                     InlineKeyboardButton(
 
-                        name, url=f"https://t.me/{message.from_user.chatusername}")
+                        name, url=f"https://t.me/{message.from_chatusername.id}")
 
                 ],
 
