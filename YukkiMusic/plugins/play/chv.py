@@ -12,13 +12,15 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
+    usr = await client.get_users(BOTID)
+    name = usr.first_name
     async for photo in client.iter_profile_photos(5274610090, limit=1):
                     await message.reply_photo(photo.file_id,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "𝘿𝙀𝙑 ¦ 𝙀𝙎𝙇𝘼𝙈", url=f"https://t.me/S_D_H_A"),
+                        name, url=f"https://t.me/S_D_H_A"),
                 ],[
                     InlineKeyboardButton(
                         "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", callback_data=f"fft"),
