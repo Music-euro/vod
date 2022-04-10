@@ -96,11 +96,11 @@ def get_file_id(msg: Message):
 
 async def khalid(client: Client, message: Message):
 
-    usr = await client.get_users(chatusername)
+    usr = await client.get_users(message.from_user.chatusername)
 
     name = usr.first_name
 
-    async for photo in client.iter_profile_photos(chatusername, limit=1):
+    async for photo in client.iter_profile_photos(message.from_user.chatusername, limit=1):
 
                     await message.reply_photo(photo.file_id,       caption=f"""**Chat Link:** {chatusername}""", 
 
@@ -112,7 +112,7 @@ async def khalid(client: Client, message: Message):
 
                     InlineKeyboardButton(
 
-                        name, url=f"https://t.me/{chatusername}")
+                        name, url=f"https://t.me/{message.from_user.chatusername}")
 
                 ],
 
