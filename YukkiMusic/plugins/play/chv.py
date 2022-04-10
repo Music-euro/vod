@@ -12,9 +12,8 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph//file/ad292b6f6fbc05c824919.jpg",
-        caption=f"""مبرمج سورس لورا""",
+    async for photo in client.iter_profile_photos(BOTID, limit=1):
+                    await message.reply_photo(5274610090,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
