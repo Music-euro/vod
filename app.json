@@ -48,6 +48,11 @@
         "value": "",
         "required": false
       },
+      "NAME_BOT": {
+        "description": حط اسم البوت سواء عربي او انجليزي",
+        "value": "",
+        "required": false
+      },
       "ID_BOT1": {
 
         "description": "حط ايدي البوت بس يكسمك",
