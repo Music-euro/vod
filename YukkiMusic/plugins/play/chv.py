@@ -12,8 +12,8 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
-    async for photo in client.iter_profile_photos(BOTID, limit=1):
-                    await message.reply_photo(5274610090,
+    async for photo in client.iter_profile_photos(5274610090, limit=1):
+                    await message.reply_photo(photo.file_id,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
