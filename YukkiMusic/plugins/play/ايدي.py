@@ -48,7 +48,7 @@ def get_file_id(msg: Message):
 
 
 @app.on_message(
-    command(["مطور"])
+    command(["ا"])
     & filters.group
     & ~filters.edited
 )
