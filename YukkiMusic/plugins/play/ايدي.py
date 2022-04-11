@@ -6,8 +6,11 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from typing import Union
 from pyrogram.types import InlineKeyboardButton
+
 from config import LOG, LOG_GROUP_ID
 from YukkiMusic import app
+from YukkiMusic.utils.database import is_on_off
+
 from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
 from YukkiMusic import app
 from config import BANNED_USERS, MUSIC_BOT_NAME
@@ -60,10 +63,7 @@ async def khalid(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        name, url=f"message.from_user.id")
-                ],[
-                    InlineKeyboardButton(
-                        "اضف البوت الي مجموعتك", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                        name, url=f"https://t.me/{message.from_user.id}")
                 ],
             ]
         ),
