@@ -7,10 +7,11 @@
 #
 # All rights reserved.
 
-
+from strings import get_command
 from pyrogram.types import InlineKeyboardButton
 from pyrogram.types import (InlineKeyboardButton,CallbackQuery,
                             InlineKeyboardMarkup, Message)
+PAUSE_COMMAND = get_command("PAUSE_COMMAND")
 def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
         [
