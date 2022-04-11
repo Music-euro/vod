@@ -64,7 +64,7 @@ def stream_markup(_, videoid):
         ],
         [
             InlineKeyboardButton(
-                        "كتم", callback_data=f"PAUSE_COMMAND"
+                        "كتم", url=f"{PAUSE_COMMAND}"),
             ),
         ],
         [
