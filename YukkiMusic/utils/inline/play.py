@@ -21,9 +21,6 @@ from YukkiMusic.utils.decorators import AdminRightsCheck
 from pyrogram.types import InlineKeyboardButton
 from pyrogram.types import (InlineKeyboardButton,CallbackQuery,
                             InlineKeyboardMarkup, Message)
-# Commands
-PAUSE_COMMAND = get_command("PAUSE_COMMAND")
-
 def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
         [
