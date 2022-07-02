@@ -7,22 +7,22 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 
 
 @app.on_message(
-    command(["مصنع"])
+    command(["قناة السورس"])
     & filters.group
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/a3d4246a9df962128c416.jpg",
-        caption=f"""- مصنع سورس لورا المجاني .""",
+        photo=f"https://telegra.ph/file/45e8628b431b63a659299.jpg",
+        caption=f"""- قناة سورس يورو الرسميه .""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "- لتنصيب بوتك اضغط هنا .", url=f"https://t.me/HDD_DBOT"),
+                        "- اضغط هنا لدخول القناة .", url=f"https://t.me/E_U_R_O_1"),
                 ],[
                     InlineKeyboardButton(
-                        "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", callback_data=f"fft"),
+                        "- sᴏᴜʀᴄᴇ ᴇᴜʀᴏ .", callback_data=f"fft"),
                 ],
             ]
         ),

@@ -7,22 +7,22 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 
 
 @app.on_message(
-    command(["ماديسونن"])
+    command(["اسكندر"])
     & filters.group
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/02ff5eed4dc2a34cbc1f7.jpg",
-        caption=f"""- ماديسون مبرمج سورس لورا .""",
+        photo=f"https://telegra.ph/file/45e8628b431b63a659299.jpg",
+        caption=f"""- مبرمجين سورس يورو .""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "◜ 𝙈َ𝙖 𝘿ِ𝙞 𝙎ُ𝙤𝙉 ◞", url=f"https://t.me/MaDyY_y"),
+                        "◜ ᴜᴇsʀ ᴇᴜʀᴏ ◞", url=f"https://t.me/E_U_R_O_3"),
                 ],[
                     InlineKeyboardButton(
-                        "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", callback_data=f"fft"),
+                        "- sᴏᴜʀᴄᴇ ᴇᴜʀᴏ .", callback_data=f"fft"),
                 ],
             ]
         ),
@@ -36,13 +36,13 @@ async def khalid(client: Client, message: Message):
 )
 async def khid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/02ff5eed4dc2a34cbc1f7.jpg",
+        photo=f"https://telegra.ph/file/81c9c970813ccfc55d3e1.jpg",
         caption=f"""انت يقلبي {message.from_user.mention()} 🙈🖤🥺""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", url=f"https://t.me/so_alfaa"),
+                        "- sᴏᴜʀᴄᴇ ᴇᴜʀᴏ .", url=f"https://t.me/E_U_R_O_1"),
                 ],
             ]
         ),

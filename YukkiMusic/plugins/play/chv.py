@@ -7,7 +7,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 
 
 @app.on_message(
-    command(["اسلام"])
+    command(["بودي"])
     & filters.group
     & ~filters.edited
 )
@@ -20,10 +20,10 @@ async def khalid(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        name, url=f"https://t.me/S_D_H_A"),
+                        name, url=f"https://t.me/x_bo_dy_alkbir"),
                 ],[
                     InlineKeyboardButton(
-                        "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", callback_data=f"fft"),
+                        "- sᴏᴜʀᴄᴇ ᴇᴜʀᴏ .", callback_data=f"fft"),
                 ],
             ]
         ),

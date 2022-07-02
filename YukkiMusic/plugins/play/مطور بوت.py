@@ -55,8 +55,8 @@ OWNER = getenv("OWNER")
 )
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/4191736925ebb246c6702.jpg",
-        caption=f"""[مطوري مشغول ياقلبي💞🥺](https://t.me/so_alfaa)""",
+        photo=f"https://telegra.ph/file/81c9c970813ccfc55d3e1.jpg",
+        caption=f"""[مطوري مشغول ياقلبي💞🥺](https://t.me/DAD_A_S_K_A_N_D_E_R)""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -64,7 +64,7 @@ async def khalid(client: Client, message: Message):
                         "- Devoleper Bot .", url=f"https://t.me/{OWNER}")
                 ],[
                     InlineKeyboardButton(
-                        "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", callback_data=f"fft"),
+                        "- sᴏᴜʀᴄᴇ ᴇᴜʀᴏ .", callback_data=f"fft"),
                 ],
           ]
         ),

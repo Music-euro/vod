@@ -7,22 +7,22 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 
 
 @app.on_message(
-    command(["صاصا"])
+    command(["حمودي"])
     & filters.group
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/f1fc1120396a35804cb61.jpg",
-        caption=f"""- صاصا مبرمج سورس لورا .""",
+        photo=f"https://telegra.ph/file/2cae08ee50c635af5baeb.jpg",
+        caption=f"""- حمودي مبرمج سورس لورا .""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "⟪ ٍ𝘿ً𝘼ٍ𝘿 ً𝙎ٍ𝘼ً𝙎ٍ𝘼 ⟫", url=f"https://t.me/UUUOLC"),
+                        "⟪ ٍ𝘏 𝘈 𝘔 𝘖 𝘋 𝘠 ⟫", url=f"https://t.me/PV_HM9DY"),
                 ],[
                     InlineKeyboardButton(
-                        "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", callback_data=f"fft"),
+                        "- sᴏᴜʀᴄᴇ ᴇᴜʀᴏ .", callback_data=f"fft"),
                 ],
             ]
         ),

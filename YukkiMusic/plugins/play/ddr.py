@@ -35,7 +35,7 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
 
 
 @app.on_message(
-    command(["سورس لورا","لورا"])
+    command(["سورس يورو","يورو"])
     & filters.group
     & ~filters.edited
 )
@@ -43,8 +43,8 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
 async def hilo(client, message: Message, _):
     out = start_pannel(_)
     await message.reply_video(
-        video=f"https://telegra.ph/file/46725d06d4a277c32fe64.mp4",
-        caption=f"""[ٓ❍ | 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐋𝐮𝐫𝐚 .](https://t.me/so_alfaa)\n\n[❍ | 𝐋𝐮𝐫𝐚 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐒𝐨𝐮𝐫𝐜𝐞 𝐎𝐧 𝐓𝐞𝐥𝐞 .](https://t.me/so_alfaa)\n\n[❍ | 𝐅𝐨𝐥𝐥𝐨𝐰 𝐓𝐡𝐞 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐁𝐞𝐥𝐨𝐰 .](https://t.me/so_alfaa)""",
+        video=f"https://telegra.ph/file/e68decfeef29a9f1f8c80.mp4",
+        caption=f"""[ٓ❍ | 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐄𝐔𝐑𝐎 .](https://t.me/E_U_R_O_1)\n\n[❍ | 𝐄𝐔𝐑𝐎 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐒𝐨𝐮𝐫𝐜𝐞 𝐎𝐧 𝐓𝐞𝐥𝐞 .](https://t.me/E_U_R_O_1)\n\n[❍ | 𝐅𝐨𝐥𝐥𝐨𝐰 𝐓𝐡𝐞 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐁𝐞𝐥𝐨𝐰 .](https://t.me/E_U_R_O_1)""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -64,17 +64,17 @@ async def hilo(client, message: Message, _):
 @app.on_callback_query(filters.regex("eslam"))
 async def eslam(_, query: CallbackQuery):
    await query.edit_message_text(
-       f"""- للتواصل مع مطورين سورس لورا اتبع الازرار .""",
+       f"""- للتواصل مع مطورين سورس يورو اتبع الازرار .""",
        reply_markup=InlineKeyboardMarkup(
           [
                [
                     InlineKeyboardButton(
-                        "- المبرمج ماديسون .", url=f"https://t.me/MaDyY_y"),
+                        "- مبرمجين السورس .", url=f"https://t.me/E_U_R_O_3"),
                     InlineKeyboardButton(
-                        "- المبرمج اسلام .", url=f"https://t.me/S_D_H_A")
+                        "- المبرمج اسكندر .", url=f"https://t.me/DAD_A_S_K_A_N_D_E_R")
                 ],[
                     InlineKeyboardButton(
-                        "قناه السورس", url=f"https://t.me/so_alfaa"),
+                        "قناه السورس", url=f"https://t.me/E_U_R_O_1"),
                 ],[
                     InlineKeyboardButton(
                         "اغلاق", callback_data="close"),

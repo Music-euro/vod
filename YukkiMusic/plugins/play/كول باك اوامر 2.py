@@ -36,14 +36,14 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
 @app.on_callback_query(filters.regex("ddd"))
 async def ddd(_, query: CallbackQuery):
    await query.edit_message_text(
-       f"""\n\n╭── • [- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .](https://t.me/so_alfaa) • ──╮\n\n""",
+       f"""\n\n╭── • [- sᴏᴜʀᴄᴇ ᴇᴜʀᴏ .](https://t.me/E_U_R_O_1) • ──╮\n\n""",
        reply_markup=InlineKeyboardMarkup(
           [
                [
                     InlineKeyboardButton(
-                        "- 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐋𝐮𝐫𝐚 .", url=f"https://t.me/LURA205"),
+                        "- 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐄𝐔𝐑𝐎 .", url=f"https://t.me/TheeSupportChat"),
                     InlineKeyboardButton(
-                        "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", url=f"https://t.me/so_alfaa")
+                        "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", url=f"https://t.me/E_U_R_O_1")
                 ],[
                     InlineKeyboardButton(
                         "اغلاق", callback_data="close"),
@@ -68,7 +68,7 @@ async def back1(_, query: CallbackQuery):
                         "②", callback_data=f"ddd"),
                 ],[
                     InlineKeyboardButton(
-                        "- sᴏᴜʀᴄᴇ ʟᴜʀᴀ .", callback_data=f"fft"),
+                        "- sᴏᴜʀᴄᴇ ᴇᴜʀᴏ .", callback_data=f"fft"),
                 ],
             ]
         ),
