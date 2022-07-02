@@ -1,7 +1,7 @@
 {
-    "name": "Source Lura Music",
+    "name": "Source Eoro Music",
     "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
-    "logo": "https://telegra.ph/file/02ff5eed4dc2a34cbc1f7.jpg",
+    "logo": "https://telegra.ph/file/71da8ab1cb5fabfd626a2.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -99,7 +99,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "ضع هنا رابط جيت هاب السورس",
-        "value": "https://github.com/GG-TT/allura",
+        "value": "https://github.com/Music-euro/vod.git",
         "required": true
       },
       "UPSTREAM_BRANCH": {
